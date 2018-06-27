@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <block type="core/text" name="addjquery">
+                <action method="setText">
+                    <text>
+                        <![CDATA[
+                        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+                        </script>
+                        <script type="text/javascript">jQuery.noConflict();</script>]]>
+                    </text>
+                </action>
+            </block>
+        </reference>
+    </default>
+    <custom_index_index>
+        <block type="custom/form" name="root" template="custom/form1.phtml" />
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="custom/form" name="custom" template="custom/form.phtml" />
+        </reference>
+    </custom_index_index>
+</layout>

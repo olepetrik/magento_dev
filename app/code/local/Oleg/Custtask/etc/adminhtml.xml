@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <custtask translate="title" module="custtask">
+                                        <title>Custom Task(Oleg)</title>
+                                    </custtask>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <cms>
+                        <children>
+                            <custtask translate="title" module="custtask">
+                                <title>Custom Task(Oleg)</title>
+                            </custtask>
+                        </children>
+                    </cms>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <cms>
+            <children>
+                <custtask translate="title" module="custtask">
+                    <title>Custom Task(Oleg)</title>
+                    <action>adminhtml/custtask</action>
+                    <sort_order>20</sort_order>
+                </custtask>
+            </children>
+        </cms>
+    </menu>
+</config>

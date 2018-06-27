@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <modules>
+        <Oleg_Newrewr>
+            <active>false</active>
+            <codePool>local</codePool>
+        </Oleg_Newrewr>
+    </modules>
+</config>

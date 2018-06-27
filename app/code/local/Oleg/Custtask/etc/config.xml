@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Oleg_Custtask>
+            <version>1.0.1</version>
+        </Oleg_Custtask>
+    </modules>
+    <global>
+        <blocks>
+            <custtask>
+                <class>Oleg_Custtask_Block</class>
+            </custtask>
+
+            <!--Rewrite Block-->
+
+            <customer>
+                <rewrite>
+                    <form_register>Oleg_Custtask_Block_Form_Register</form_register>
+                </rewrite>
+            </customer>
+
+            <!---->
+
+        </blocks>
+        <models>
+            <custtask>
+                <class>Oleg_Custtask_Model</class>
+                <resourceModel>custtask_resource</resourceModel>
+            </custtask>
+            <custtask_resource>
+                <class>Oleg_Custtask_Model_Resource</class>
+                <entities>
+                    <block>
+                        <table>oleg_custtask</table>
+                    </block>
+                </entities>
+            </custtask_resource>
+
+            <!--Rewrite model-->
+
+            <customer>
+                <rewrite>
+                    <customer>Oleg_Custtask_Model_Customer</customer>
+                </rewrite>
+            </customer>
+
+            <!---->
+
+        </models>
+        <resources>
+            <custtask_setup>
+                <setup>
+                    <module>Oleg_Custtask</module>
+                </setup>
+            </custtask_setup>
+        </resources>
+        <helpers>
+            <custtask>
+                <class>Oleg_Custtask_Helper</class>
+            </custtask>
+
+            <!--Rewrite helper-->
+
+            <customer>
+                <rewrite>
+                    <address>Oleg_Custtask_Helper_Address</address>
+                </rewrite>
+            </customer>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <custtask module="custtask">
+                    <file>custtask.xml</file>
+                </custtask>
+            </updates>
+        </layout>
+        <routers>
+            <custtask>
+                <use>standard</use>
+                <args>
+                    <module>Oleg_Custtask</module>
+                    <frontName>custtask</frontName>
+                </args>
+            </custtask>
+        </routers>
+        <translate>
+            <modules>
+                <Oleg_Custtask>
+                    <files>
+                        <default>Oleg_Custtask.csv</default>
+                    </files>
+                </Oleg_Custtask>
+            </modules>
+        </translate>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <custtask before="Mage_Adminhtml">Oleg_Custtask_Adminhtml</custtask>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <events>
+
+            <!--Module for Custom grid and Custom tabs-->
+
+            <!--<core_block_abstract_to_html_before>-->
+                <!--<observers>-->
+                    <!--<custtask>-->
+                    <!--<class>custtask/observer</class>-->
+                    <!--<method>coreBlockAbstractToHtmlBefore</method>-->
+                    <!--</custtask>-->
+                <!--</observers>-->
+            <!--</core_block_abstract_to_html_before>-->
+            <!--<eav_collection_abstract_load_before>-->
+                <!--<observers>-->
+                    <!--<custtask>-->
+                        <!--<class>custtask/observer</class>-->
+                        <!--<method>eavCollectionAbstractLoadBefore</method>-->
+                    <!--</custtask>-->
+                <!--</observers>-->
+            <!--</eav_collection_abstract_load_before>-->
+            <custtask_block_adminhtml_custtask_edit_form_after>
+                <observers>
+                    <custtask>
+                        <class>custtask/observer</class>
+                        <method>addFiledToCustomForm</method>
+                    </custtask>
+                </observers>
+            </custtask_block_adminhtml_custtask_edit_form_after>
+
+            <!---->
+
+            <!--Module for Customer Grid-->
+
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <custtask>
+                        <class>custtask/observer</class>
+                        <type>singleton</type>
+                        <method>beforeBlockToHtml</method>
+                    </custtask>
+                </observers>
+            </core_block_abstract_to_html_before>
+            <eav_collection_abstract_load_before>
+                <observers>
+                    <custtask>
+                        <class>custtask/observer</class>
+                        <method>beforeCollectionLoad</method>
+                    </custtask>
+                </observers>
+            </eav_collection_abstract_load_before>
+
+            <!---->
+
+        </events>
+    </adminhtml>
+    <default>
+            <custtask>
+                <settings>
+                    <enabled>1</enabled>
+                    <block_count>10</block_count>
+                </settings>
+            </custtask>
+    </default>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oleg_NewProduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Oleg_NewProduct>
+    </modules>
+</config>

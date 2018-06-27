@@ -1,0 +1,17 @@
+2018-06-25T13:27:57+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in /var/www/magento.site/app/code/core/Mage/Wishlist/Model/Observer.php on line 105
+2018-06-26T08:48:54+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in /var/www/magento.site/app/code/core/Mage/Wishlist/Model/Observer.php on line 105
+2018-06-26T09:10:35+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:10:37+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:10:41+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:13:00+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:13:54+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:14:02+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:14:34+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:17:46+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:18:20+00:00 ERR (3): Warning: count(): Parameter must be an array or an object that implements Countable  in /var/www/magento.site/lib/Varien/File/Uploader.php on line 522
+2018-06-26T09:18:35+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T09:59:47+00:00 ERR (3): Warning: Declaration of Oleg_Custtask_Model_Customer::getPrimaryAddress() should be compatible with Mage_Customer_Model_Customer::getPrimaryAddress($attributeCode)  in /var/www/magento.site/app/code/local/Oleg/Custtask/Model/Customer.php on line 2
+2018-06-26T10:00:34+00:00 ERR (3): Warning: Declaration of Oleg_Custtask_Model_Customer::getPrimaryAddress() should be compatible with Mage_Customer_Model_Customer::getPrimaryAddress($attributeCode)  in /var/www/magento.site/app/code/local/Oleg/Custtask/Model/Customer.php on line 2
+2018-06-26T10:00:35+00:00 ERR (3): Warning: Declaration of Oleg_Custtask_Model_Customer::getPrimaryAddress() should be compatible with Mage_Customer_Model_Customer::getPrimaryAddress($attributeCode)  in /var/www/magento.site/app/code/local/Oleg/Custtask/Model/Customer.php on line 2
+2018-06-26T10:01:28+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
+2018-06-26T11:03:20+00:00 CRIT (2): Not valid template file:frontend/base/default/template/newproduct/product_view_type_simple.phtml
